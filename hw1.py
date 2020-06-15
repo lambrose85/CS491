@@ -9,8 +9,12 @@ def books(arr):
     """
     print('Add names to list, press q/Q to finish')
     flag = True
-    while flag
-
+    while flag:
+        s = input("name\n")
+        if(s=='q'or s=='Q'):
+            flag=False
+        else:
+            print("Added "+s+" to list")
 
 
 test= "hello"
