@@ -18,6 +18,12 @@ if num.isdigit():
     print("is number")
 else:
     print("not number")
-temp = str(num)
+    check = False
+    while(check==False):
+        print("Enter an integer ")
+        num = input()
+        if num.isdigit():
+            check = True
+                
 
 
