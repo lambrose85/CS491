@@ -1,16 +1,4 @@
 
-
-
-    
-
-def numCheck(num):
-    if num.isdigit():
-        print("calculating")
-        return True
-    else:
-        print("NAN")
-        return False
-
 print("Enter a number to have its individual digits squared then combined to a new number")
 num = input()
 
@@ -23,7 +11,19 @@ else:
         print("Enter an integer ")
         num = input()
         if num.isdigit():
-            check = True
-                
+          check = True
+
+val = int(num)
+exp=val**2
+temp = str(num)
+
+length = len(temp)
+result = ""
+for i in range(length):
+   exp=int(temp[i])**2
+   result +=str(exp)
+
+print(int(result))
+
 
 
