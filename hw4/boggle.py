@@ -9,9 +9,20 @@ class Dice:
                 , ['E','R','T', 'T', 'Y', 'L'], ['T','O','E', 'S', 'S', 'I'], ['T','E','R', 'W', 'H', 'V'], ['N','U','I', 'H', 'M', 'Qu']]
 
     def ran(self, x):
+        letters = []
         for i in x:
-            letter = random.randint(0,5)
-            print(i[letter])
+            index = random.randint(0,5)
+            letters.append(i[index])
+        return letters
+def printDice(x):
+    counter = 0
+    for i in x:
+        if counter%4 == 0:
+            print("\n")
+        print(" "+i+" ", end='')
+        counter += 1
+    print("\n")   
+        
 bog = Dice()
-bog.ran(bog.myDice)
-
+test = bog.ran(bog.myDice)
+printDice(test)
